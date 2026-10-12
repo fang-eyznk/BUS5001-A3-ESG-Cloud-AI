@@ -1,0 +1,52 @@
+{
+  "name": "c4e79f37-59b2-59ca-8415-a81fbfc13655",
+  "displayName": "Human Handoff",
+  "description": "Escalation endpoint: live-agent handoff to the ESG Operations Desk and signposting of confidential channels.",
+  "transitionRoutes": [
+    {
+      "condition": "true",
+      "triggerFulfillment": {},
+      "targetPage": "Connect to Person",
+      "name": "2d92182e-9a2b-5e6c-87d7-a7d56429bd20"
+    }
+  ],
+  "eventHandlers": [
+    {
+      "event": "sys.no-match-default",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "A person from the ESG Operations Desk will pick this up."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ]
+      },
+      "name": "ff500e56-c2dc-54fc-8e21-87a5595818c4"
+    },
+    {
+      "event": "sys.no-input-default",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Take your time. When you're ready, tell me what you'd like to do, or say 'talk to a person'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ]
+      },
+      "name": "72039081-a3a6-54c8-a873-acf3a753cea4"
+    }
+  ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC"
+  }
+}

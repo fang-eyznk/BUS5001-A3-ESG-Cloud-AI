@@ -1,0 +1,58 @@
+{
+  "name": "32c0fd31-6b13-5481-8228-c7a4114f2502",
+  "displayName": "Incident Reporting",
+  "description": "Structured sustainability incident capture: form filling, urgency-based escalation, team assignment, confirmation, optional follow-up consent.",
+  "transitionRoutes": [
+    {
+      "condition": "true",
+      "triggerFulfillment": {},
+      "targetPage": "Collect Incident Details",
+      "name": "5945de36-a1f0-5640-b315-4ee1a53e4b6e"
+    },
+    {
+      "intent": "agent.human",
+      "triggerFulfillment": {},
+      "targetFlow": "Human Handoff",
+      "name": "e64255cb-c483-544b-a3e3-b3f6450e8bfd"
+    }
+  ],
+  "eventHandlers": [
+    {
+      "event": "sys.no-match-default",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Sorry, I didn't understand. You can answer the question, or say 'talk to a person' at any time."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ]
+      },
+      "name": "188df958-1b8a-5d27-bf16-a356fe9c90ea"
+    },
+    {
+      "event": "sys.no-input-default",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Take your time. When you're ready, tell me what you'd like to do, or say 'talk to a person'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ]
+      },
+      "name": "4b233869-ae50-514c-98a4-a8b4e6c82bde"
+    }
+  ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC"
+  }
+}

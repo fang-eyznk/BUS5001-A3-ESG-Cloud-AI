@@ -1,0 +1,19 @@
+{
+  "name": "7a604572-83d3-51ab-9e63-fcc047255520",
+  "displayName": "incident.report",
+  "parameters": [
+    {
+      "id": "incident_type",
+      "entityType": "@incident_type"
+    },
+    {
+      "id": "building",
+      "entityType": "@building"
+    },
+    {
+      "id": "urgency",
+      "entityType": "@urgency_level"
+    }
+  ],
+  "priority": 500000
+}

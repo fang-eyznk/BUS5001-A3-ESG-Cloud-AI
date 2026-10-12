@@ -1,0 +1,72 @@
+{
+  "name": "d5f6fbb6-caad-5529-a5c8-95d4337c399f",
+  "displayName": "Assign Team",
+  "form": {},
+  "transitionRoutes": [
+    {
+      "condition": "$session.params.incident_type = \"water leak\" OR $session.params.incident_type = \"energy waste\"",
+      "triggerFulfillment": {
+        "setParameterActions": [
+          {
+            "parameter": "assigned_team",
+            "value": "Facilities & Energy Management"
+          }
+        ]
+      },
+      "targetPage": "Confirm Report",
+      "name": "a9b791df-177a-5035-8119-99955c5210fc"
+    },
+    {
+      "condition": "$session.params.incident_type = \"waste contamination\"",
+      "triggerFulfillment": {
+        "setParameterActions": [
+          {
+            "parameter": "assigned_team",
+            "value": "Waste & Recycling Services"
+          }
+        ]
+      },
+      "targetPage": "Confirm Report",
+      "name": "b1b7124f-8192-5d24-97eb-120c64931e8c"
+    },
+    {
+      "condition": "$session.params.incident_type = \"hazardous spill\"",
+      "triggerFulfillment": {
+        "setParameterActions": [
+          {
+            "parameter": "assigned_team",
+            "value": "Environment, Health & Safety (EHS)"
+          }
+        ]
+      },
+      "targetPage": "Confirm Report",
+      "name": "a3f241ea-eb54-5047-a85b-853b6cab048d"
+    },
+    {
+      "condition": "$session.params.incident_type = \"accessibility barrier\"",
+      "triggerFulfillment": {
+        "setParameterActions": [
+          {
+            "parameter": "assigned_team",
+            "value": "Accessibility & Inclusion team with Facilities"
+          }
+        ]
+      },
+      "targetPage": "Confirm Report",
+      "name": "75e5edd3-8c03-541e-bda4-242f09ede8b8"
+    },
+    {
+      "condition": "true",
+      "triggerFulfillment": {
+        "setParameterActions": [
+          {
+            "parameter": "assigned_team",
+            "value": "ESG Operations Desk"
+          }
+        ]
+      },
+      "targetPage": "Confirm Report",
+      "name": "d29c39c7-69e4-5a60-89c5-2f3232e30452"
+    }
+  ]
+}

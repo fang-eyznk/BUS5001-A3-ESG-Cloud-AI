@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "value": "coffee cup",
+      "synonyms": [
+        "coffee cup",
+        "coffee cups",
+        "takeaway cup",
+        "disposable cup",
+        "paper cup"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "soft plastics",
+      "synonyms": [
+        "soft plastics",
+        "soft plastic",
+        "plastic bag",
+        "plastic bags",
+        "chip packet",
+        "wrapper",
+        "wrappers",
+        "cling wrap",
+        "glad wrap"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "batteries",
+      "synonyms": [
+        "batteries",
+        "battery",
+        "AA batteries",
+        "power bank",
+        "lithium battery"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "e-waste",
+      "synonyms": [
+        "e-waste",
+        "ewaste",
+        "electronic waste",
+        "laptop",
+        "old laptop",
+        "phone",
+        "mobile phone",
+        "monitor",
+        "cables",
+        "printer",
+        "keyboard",
+        "charger"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "food scraps",
+      "synonyms": [
+        "food scraps",
+        "food",
+        "food waste",
+        "leftovers",
+        "fruit peel",
+        "banana peel",
+        "coffee grounds",
+        "tea bags",
+        "organic waste"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "paper and cardboard",
+      "synonyms": [
+        "paper and cardboard",
+        "paper",
+        "cardboard",
+        "boxes",
+        "cardboard box",
+        "newspaper",
+        "office paper",
+        "envelopes"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "glass",
+      "synonyms": [
+        "glass",
+        "glass bottle",
+        "glass bottles",
+        "glass jar",
+        "wine bottle"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "printer cartridges",
+      "synonyms": [
+        "printer cartridges",
+        "printer cartridge",
+        "toner",
+        "toner cartridge",
+        "ink cartridge"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "plastic bottles and containers",
+      "synonyms": [
+        "plastic bottles and containers",
+        "plastic bottles",
+        "plastic bottle",
+        "water bottle",
+        "drink bottle",
+        "plastic container",
+        "yoghurt tub",
+        "takeaway container"
+      ],
+      "languageCode": "en"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "run_finished": "2026-10-11T06:35:06.812682",
+  "runtime_minutes": 13.2,
+  "llm": "Qwen/Qwen2.5-3B-Instruct",
+  "llm_dtype": "torch.float16",
+  "zero_shot_model": "facebook/bart-large-mnli",
+  "gpu": "Tesla T4",
+  "transformers": "5.18.0",
+  "torch": "2.11.0+cu130",
+  "python": "3.13.15",
+  "decoding": {
+    "greedy": "do_sample=False",
+    "consistency": "temperature=0.7, top_p=0.95, seeds 1 and 2"
+  },
+  "n_messages": 40,
+  "consistency_ids": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "E2",
+    "E5",
+    "E9",
+    "E12",
+    "E13",
+    "E15",
+    "P4"
+  ]
+}

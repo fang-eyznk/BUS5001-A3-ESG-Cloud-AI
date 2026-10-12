@@ -1,0 +1,43 @@
+{
+  "name": "6a355b83-3091-574e-9e4a-da1b7592b0ee",
+  "displayName": "Connect to Person",
+  "form": {},
+  "entryFulfillment": {
+    "messages": [
+      {
+        "text": {
+          "text": [
+            "I'll connect you with the ESG Operations Desk (staffed Monday to Friday, 8am to 6pm). What you've told me so far will be passed on, so you won't need to repeat yourself."
+          ]
+        },
+        "languageCode": "en"
+      },
+      {
+        "text": {
+          "text": [
+            "If your concern is confidential, such as misconduct, harassment, wellbeing or a whistleblower matter, please use the independent Speak Up line instead of this chat. You can stay anonymous there."
+          ]
+        },
+        "languageCode": "en"
+      },
+      {
+        "liveAgentHandoff": {
+          "metadata": {
+            "queue": "esg-operations-desk",
+            "incident_type": "$session.params.incident_type",
+            "priority": "$session.params.priority"
+          }
+        },
+        "languageCode": "en"
+      }
+    ]
+  },
+  "transitionRoutes": [
+    {
+      "condition": "true",
+      "triggerFulfillment": {},
+      "targetPage": "End Session",
+      "name": "26f613bc-9f67-5bce-9bbc-7e3e1f854335"
+    }
+  ]
+}

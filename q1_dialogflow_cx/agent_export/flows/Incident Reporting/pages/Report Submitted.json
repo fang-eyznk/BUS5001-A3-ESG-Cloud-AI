@@ -1,0 +1,83 @@
+{
+  "name": "7ca80f8e-ab5f-5a2d-a92f-46a94be1c633",
+  "displayName": "Report Submitted",
+  "form": {},
+  "entryFulfillment": {
+    "messages": [
+      {
+        "text": {
+          "text": [
+            "Thank you. Your report has been logged and sent to $session.params.assigned_team with priority $session.params.priority. Contact preference: $session.params.contact_preference. Reports like yours feed our monthly ESG dashboard on water, energy, waste and accessibility.\nIs there anything else? You can report another issue, ask a recycling question, or say 'bye'."
+          ]
+        },
+        "languageCode": "en"
+      },
+      {
+        "payload": {
+          "richContent": [
+            [
+              {
+                "type": "chips",
+                "options": [
+                  {
+                    "text": "Report an issue"
+                  },
+                  {
+                    "text": "Recycling help"
+                  },
+                  {
+                    "text": "Close chat"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "languageCode": "en"
+      }
+    ]
+  },
+  "transitionRoutes": [
+    {
+      "condition": "true",
+      "triggerFulfillment": {
+        "setParameterActions": [
+          {
+            "parameter": "incident_type",
+            "value": null
+          },
+          {
+            "parameter": "building",
+            "value": null
+          },
+          {
+            "parameter": "location_detail",
+            "value": null
+          },
+          {
+            "parameter": "urgency",
+            "value": null
+          },
+          {
+            "parameter": "priority",
+            "value": null
+          },
+          {
+            "parameter": "assigned_team",
+            "value": null
+          },
+          {
+            "parameter": "followup_email",
+            "value": null
+          },
+          {
+            "parameter": "contact_preference",
+            "value": null
+          }
+        ]
+      },
+      "targetPage": "End Flow",
+      "name": "f79b680b-d954-5b05-8f2b-de1f3d02d6eb"
+    }
+  ]
+}

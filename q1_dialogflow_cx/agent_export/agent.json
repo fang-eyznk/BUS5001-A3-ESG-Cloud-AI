@@ -1,0 +1,17 @@
+{
+  "displayName": "Corvale GreenDesk",
+  "defaultLanguageCode": "en",
+  "timeZone": "Australia/Melbourne",
+  "description": "ESG Sustainability Support Assistant (prototype) for reporting sustainability incidents, recycling guidance and escalation to people.",
+  "startFlow": "Default Start Flow",
+  "enableStackdriverLogging": true,
+  "speechToTextSettings": {
+    "enableSpeechAdaptation": false
+  },
+  "advancedSettings": {
+    "loggingSettings": {
+      "enableStackdriverLogging": true,
+      "enableInteractionLogging": false
+    }
+  }
+}

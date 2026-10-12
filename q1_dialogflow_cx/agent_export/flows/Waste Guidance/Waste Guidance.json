@@ -1,0 +1,64 @@
+{
+  "name": "b68daee7-e1a7-5b8e-a3e6-9c2f518b6fa8",
+  "displayName": "Waste Guidance",
+  "description": "Side journey: disposal guidance for common workplace items (reduces recycling contamination).",
+  "transitionRoutes": [
+    {
+      "condition": "true",
+      "triggerFulfillment": {},
+      "targetPage": "Identify Item",
+      "name": "0ddb54ee-f781-5cef-a3a1-492f2ad2dec0"
+    },
+    {
+      "intent": "agent.human",
+      "triggerFulfillment": {},
+      "targetFlow": "Human Handoff",
+      "name": "90af6244-c401-5277-a3f7-e2cd1d28381d"
+    },
+    {
+      "intent": "incident.report",
+      "triggerFulfillment": {},
+      "targetFlow": "Incident Reporting",
+      "name": "5e9c7dc5-dce3-5a86-8617-3462ad066c0b"
+    }
+  ],
+  "eventHandlers": [
+    {
+      "event": "sys.no-match-default",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Sorry, I didn't understand. Tell me the item you want to dispose of, or say 'talk to a person'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ]
+      },
+      "name": "7c72ae01-0b0f-5431-8bc0-fb18ec3e9d77"
+    },
+    {
+      "event": "sys.no-input-default",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Take your time. When you're ready, tell me what you'd like to do, or say 'talk to a person'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ]
+      },
+      "name": "9e8bbf37-648e-5bd6-811b-2578ef20dc23"
+    }
+  ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC"
+  }
+}

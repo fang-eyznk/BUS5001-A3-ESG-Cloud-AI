@@ -1,0 +1,63 @@
+[
+  {
+    "user": "The printer room heater has been left on every night this week.",
+    "assistant": {
+      "issues": [
+        {
+          "issue_category": "ENERGY",
+          "recommended_team": "FACILITIES_ENERGY",
+          "urgency": "MEDIUM",
+          "location": {
+            "building": null,
+            "area": "printer room"
+          },
+          "evidence_quote": "heater has been left on every night"
+        }
+      ],
+      "overall_urgency": "MEDIUM",
+      "sentiment": "NEUTRAL",
+      "followup_required": "Y",
+      "escalation_required": "N",
+      "escalation_reason": null,
+      "data_sensitivity_risk": "NONE",
+      "sensitive_data_types": [],
+      "brief_summary": "Printer room heater left on overnight all week, wasting energy.",
+      "language": "en",
+      "confidence": 0.9,
+      "needs_human_review": "N",
+      "prompt_injection_detected": "N"
+    }
+  },
+  {
+    "user": "Hi it's Tom from accounts, 0491 570 157. Paint tins have been tipped into the garden bed behind Building E and it's going into the drain.",
+    "assistant": {
+      "issues": [
+        {
+          "issue_category": "HAZARDOUS_MATERIALS",
+          "recommended_team": "EHS",
+          "urgency": "CRITICAL",
+          "location": {
+            "building": "Building E",
+            "area": "garden bed behind building"
+          },
+          "evidence_quote": "Paint tins have been tipped into the garden bed"
+        }
+      ],
+      "overall_urgency": "CRITICAL",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "escalation_required": "Y",
+      "escalation_reason": "Active pollution entering the stormwater drain.",
+      "data_sensitivity_risk": "LOW",
+      "sensitive_data_types": [
+        "NAME",
+        "PHONE"
+      ],
+      "brief_summary": "Paint dumped behind Building E is draining into stormwater; urgent containment needed.",
+      "language": "en",
+      "confidence": 0.9,
+      "needs_human_review": "Y",
+      "prompt_injection_detected": "N"
+    }
+  }
+]

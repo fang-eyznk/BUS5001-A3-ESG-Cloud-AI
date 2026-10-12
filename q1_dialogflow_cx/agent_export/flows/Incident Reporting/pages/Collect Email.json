@@ -1,0 +1,110 @@
+{
+  "name": "f4708ae3-853e-557d-b45b-df3d348a2d68",
+  "displayName": "Collect Email",
+  "form": {
+    "parameters": [
+      {
+        "displayName": "followup_email",
+        "required": true,
+        "entityType": "@sys.email",
+        "fillBehavior": {
+          "initialPromptFulfillment": {
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "What's your work email address?"
+                  ]
+                },
+                "languageCode": "en"
+              }
+            ]
+          },
+          "repromptEventHandlers": [
+            {
+              "event": "sys.no-match-1",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "That doesn't look like an email address. Please type it like name@corvale.com.au, or say 'no' to stay anonymous."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "939ead24-9397-51c7-8d82-a75ff39fcd2e"
+            },
+            {
+              "event": "sys.no-match-2",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "Please enter a valid email, or say 'no' to submit anonymously."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "5f5a7043-c949-50e0-b5f4-587d174b8cff"
+            },
+            {
+              "event": "sys.no-input-default",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "What's your email address? Or say 'no' to stay anonymous."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "eda85af3-8b83-57ea-b751-ed132fe16367"
+            }
+          ]
+        },
+        "redact": true
+      }
+    ]
+  },
+  "transitionRoutes": [
+    {
+      "condition": "$page.params.status = \"FINAL\"",
+      "triggerFulfillment": {
+        "setParameterActions": [
+          {
+            "parameter": "contact_preference",
+            "value": "email updates"
+          }
+        ]
+      },
+      "targetPage": "Report Submitted",
+      "name": "76cddf6e-9c1c-5303-b097-8ca1f51c56e0"
+    },
+    {
+      "intent": "confirmation.no",
+      "triggerFulfillment": {
+        "setParameterActions": [
+          {
+            "parameter": "contact_preference",
+            "value": "anonymous (no follow-up)"
+          },
+          {
+            "parameter": "followup_email",
+            "value": null
+          }
+        ]
+      },
+      "targetPage": "Report Submitted",
+      "name": "617fd502-6462-50d1-b773-563164ba1f00"
+    }
+  ]
+}

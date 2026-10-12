@@ -1,0 +1,130 @@
+{
+  "name": "b8f620d2-ecc8-5759-b5ad-5217a0fe5048",
+  "displayName": "Confirm Report",
+  "form": {},
+  "entryFulfillment": {
+    "messages": [
+      {
+        "text": {
+          "text": [
+            "Here's your report:\n- Issue: $session.params.incident_type\n- Location: $session.params.building, $session.params.location_detail\n- Urgency: $session.params.urgency ($session.params.priority)\n- Will be sent to: $session.params.assigned_team\nIs this correct?"
+          ]
+        },
+        "languageCode": "en"
+      },
+      {
+        "payload": {
+          "richContent": [
+            [
+              {
+                "type": "chips",
+                "options": [
+                  {
+                    "text": "Yes, submit"
+                  },
+                  {
+                    "text": "No, change it"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "languageCode": "en"
+      }
+    ]
+  },
+  "transitionRoutes": [
+    {
+      "intent": "confirmation.yes",
+      "triggerFulfillment": {},
+      "targetPage": "Follow-up Preference",
+      "name": "66a49955-363b-59c2-aa1d-10c45315bf21"
+    },
+    {
+      "intent": "confirmation.no",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "No problem, let's fix it. I'll ask the questions again."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ],
+        "setParameterActions": [
+          {
+            "parameter": "incident_type",
+            "value": null
+          },
+          {
+            "parameter": "building",
+            "value": null
+          },
+          {
+            "parameter": "location_detail",
+            "value": null
+          },
+          {
+            "parameter": "urgency",
+            "value": null
+          },
+          {
+            "parameter": "priority",
+            "value": null
+          },
+          {
+            "parameter": "assigned_team",
+            "value": null
+          },
+          {
+            "parameter": "followup_email",
+            "value": null
+          },
+          {
+            "parameter": "contact_preference",
+            "value": null
+          }
+        ]
+      },
+      "targetPage": "Collect Incident Details",
+      "name": "d9818fa6-0dfe-5b59-bf47-b768e4fb653d"
+    }
+  ],
+  "eventHandlers": [
+    {
+      "event": "sys.no-match-default",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Please say 'yes' to submit the report, or 'no' to change the details."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ]
+      },
+      "name": "b3dec830-07c3-5f40-b4f6-2ff057e2fc5e"
+    },
+    {
+      "event": "sys.no-input-default",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Should I submit this report? Yes or no?"
+              ]
+            },
+            "languageCode": "en"
+          }
+        ]
+      },
+      "name": "8be4f3b0-52dd-5779-b2f0-e5928e637fe0"
+    }
+  ]
+}

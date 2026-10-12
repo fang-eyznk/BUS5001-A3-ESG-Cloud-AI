@@ -1,0 +1,593 @@
+{
+  "trainingPhrases": [
+    {
+      "parts": [
+        {
+          "text": "I want to report an issue",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "I'd like to report a problem",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "report a sustainability issue",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "Report an issue",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "I need to report something",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "something needs fixing",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "log a facilities issue",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "I want to report a ",
+          "auto": true
+        },
+        {
+          "text": "water leak",
+          "parameterId": "incident_type",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "There is a ",
+          "auto": true
+        },
+        {
+          "text": "water leak",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " in ",
+          "auto": true
+        },
+        {
+          "text": "Building C",
+          "parameterId": "building",
+          "auto": true
+        },
+        {
+          "text": " that has been running ",
+          "auto": true
+        },
+        {
+          "text": "all morning",
+          "parameterId": "urgency",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "There's a ",
+          "auto": true
+        },
+        {
+          "text": "burst pipe",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " in the ",
+          "auto": true
+        },
+        {
+          "text": "Warehouse",
+          "parameterId": "building",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "the ",
+          "auto": true
+        },
+        {
+          "text": "toilet is leaking",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " on level 2 of ",
+          "auto": true
+        },
+        {
+          "text": "Building B",
+          "parameterId": "building",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "tap left running",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " in the ",
+          "auto": true
+        },
+        {
+          "text": "Main Building",
+          "parameterId": "building",
+          "auto": true
+        },
+        {
+          "text": " kitchen",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "The ",
+          "auto": true
+        },
+        {
+          "text": "air conditioning is running",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " overnight in an empty office",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "lights left on",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " all weekend in ",
+          "auto": true
+        },
+        {
+          "text": "Building A",
+          "parameterId": "building",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "someone left the ",
+          "auto": true
+        },
+        {
+          "text": "heaters on",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " in ",
+          "auto": true
+        },
+        {
+          "text": "Building D",
+          "parameterId": "building",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "report ",
+          "auto": true
+        },
+        {
+          "text": "energy waste",
+          "parameterId": "incident_type",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "The ",
+          "auto": true
+        },
+        {
+          "text": "recycling bins are contaminated",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " ",
+          "auto": true
+        },
+        {
+          "text": "again",
+          "parameterId": "urgency",
+          "auto": true
+        },
+        {
+          "text": " and no one seems to be checking them",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "overflowing bins",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " at the ",
+          "auto": true
+        },
+        {
+          "text": "loading dock",
+          "parameterId": "building",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "people keep putting ",
+          "auto": true
+        },
+        {
+          "text": "rubbish in the recycling",
+          "parameterId": "incident_type",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "there's a ",
+          "auto": true
+        },
+        {
+          "text": "chemical spill",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " in the ",
+          "auto": true
+        },
+        {
+          "text": "Warehouse",
+          "parameterId": "building",
+          "auto": true
+        },
+        {
+          "text": " and it's ",
+          "auto": true
+        },
+        {
+          "text": "spreading",
+          "parameterId": "urgency",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "I found ",
+          "auto": true
+        },
+        {
+          "text": "batteries in the bin",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " in ",
+          "auto": true
+        },
+        {
+          "text": "Building A",
+          "parameterId": "building",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "oil spill",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " in the ",
+          "auto": true
+        },
+        {
+          "text": "Car Park",
+          "parameterId": "building",
+          "auto": true
+        },
+        {
+          "text": ", ",
+          "auto": true
+        },
+        {
+          "text": "it's dangerous",
+          "parameterId": "urgency",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "report a ",
+          "auto": true
+        },
+        {
+          "text": "hazardous spill",
+          "parameterId": "incident_type",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "The ",
+          "auto": true
+        },
+        {
+          "text": "accessible entrance is blocked",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " near the ",
+          "auto": true
+        },
+        {
+          "text": "main entrance",
+          "parameterId": "building",
+          "auto": true
+        },
+        {
+          "text": " ",
+          "auto": true
+        },
+        {
+          "text": "for two days",
+          "parameterId": "urgency",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "the ",
+          "auto": true
+        },
+        {
+          "text": "lift is broken",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " in ",
+          "auto": true
+        },
+        {
+          "text": "Building C",
+          "parameterId": "building",
+          "auto": true
+        },
+        {
+          "text": " and wheelchair users can't get upstairs",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "the ",
+          "auto": true
+        },
+        {
+          "text": "ramp is blocked",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " by delivery pallets",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "I want to report an ",
+          "auto": true
+        },
+        {
+          "text": "accessibility barrier",
+          "parameterId": "incident_type",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "water leak",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " in ",
+          "auto": true
+        },
+        {
+          "text": "Building B",
+          "parameterId": "building",
+          "auto": true
+        },
+        {
+          "text": ", ",
+          "auto": true
+        },
+        {
+          "text": "urgent",
+          "parameterId": "urgency",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "small ",
+          "auto": true
+        },
+        {
+          "text": "leaking tap",
+          "parameterId": "incident_type",
+          "auto": true
+        },
+        {
+          "text": " in ",
+          "auto": true
+        },
+        {
+          "text": "Building D",
+          "parameterId": "building",
+          "auto": true
+        },
+        {
+          "text": ", ",
+          "auto": true
+        },
+        {
+          "text": "not urgent",
+          "parameterId": "urgency",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    }
+  ]
+}

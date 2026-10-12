@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "value": "Building A",
+      "synonyms": [
+        "Building A",
+        "Block A",
+        "A Block",
+        "Bldg A"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "Building B",
+      "synonyms": [
+        "Building B",
+        "Block B",
+        "B Block",
+        "Bldg B"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "Building C",
+      "synonyms": [
+        "Building C",
+        "Block C",
+        "C Block",
+        "Bldg C"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "Building D",
+      "synonyms": [
+        "Building D",
+        "Block D",
+        "D Block",
+        "Bldg D"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "Main Building",
+      "synonyms": [
+        "Main Building",
+        "main office",
+        "head office",
+        "HQ",
+        "main entrance",
+        "main block"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "Warehouse",
+      "synonyms": [
+        "Warehouse",
+        "distribution centre",
+        "loading dock",
+        "the dock"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "Car Park",
+      "synonyms": [
+        "Car Park",
+        "carpark",
+        "parking garage",
+        "basement parking"
+      ],
+      "languageCode": "en"
+    }
+  ]
+}

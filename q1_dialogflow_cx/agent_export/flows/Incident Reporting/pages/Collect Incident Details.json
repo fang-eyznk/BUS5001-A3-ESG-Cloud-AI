@@ -1,0 +1,489 @@
+{
+  "name": "dc632c03-3fd0-5082-87c9-a46f03a47a23",
+  "displayName": "Collect Incident Details",
+  "form": {
+    "parameters": [
+      {
+        "displayName": "incident_type",
+        "required": true,
+        "entityType": "@incident_type",
+        "fillBehavior": {
+          "initialPromptFulfillment": {
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "What kind of issue is it? For example: water leak, energy waste (like lights or air-con left on), recycling contamination, hazardous spill, or an accessibility barrier."
+                  ]
+                },
+                "languageCode": "en"
+              },
+              {
+                "payload": {
+                  "richContent": [
+                    [
+                      {
+                        "type": "chips",
+                        "options": [
+                          {
+                            "text": "Water leak"
+                          },
+                          {
+                            "text": "Energy waste"
+                          },
+                          {
+                            "text": "Recycling contamination"
+                          },
+                          {
+                            "text": "Hazardous spill"
+                          },
+                          {
+                            "text": "Accessibility barrier"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                "languageCode": "en"
+              }
+            ]
+          },
+          "repromptEventHandlers": [
+            {
+              "event": "sys.no-match-1",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "Sorry, I didn't catch the type of issue. Which is closest: water leak, energy waste, recycling contamination, hazardous spill, or accessibility barrier?"
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "7d23f300-698d-5a01-9ef5-c650565d10f8"
+            },
+            {
+              "event": "sys.no-match-2",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "Let's try once more. You can type one of the options or tap a button."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "2fe421f0-9196-58ee-be89-153481a7ef7f"
+            },
+            {
+              "event": "sys.no-match-3",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "I'm having trouble understanding, so I'll pass you to a person to make sure nothing is missed."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "targetFlow": "Human Handoff",
+              "name": "6994d16f-8cb7-5775-bdc7-023e25040f8c"
+            },
+            {
+              "event": "sys.no-input-default",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "Take your time. When you're ready, tell me the type of issue."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "d474d9b3-0bc1-5628-ac41-8c15a6fe46c6"
+            }
+          ]
+        }
+      },
+      {
+        "displayName": "building",
+        "required": true,
+        "entityType": "@building",
+        "fillBehavior": {
+          "initialPromptFulfillment": {
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "Which building or site is it in? For example: Building C, Main Building, Warehouse or Car Park."
+                  ]
+                },
+                "languageCode": "en"
+              },
+              {
+                "payload": {
+                  "richContent": [
+                    [
+                      {
+                        "type": "chips",
+                        "options": [
+                          {
+                            "text": "Building A"
+                          },
+                          {
+                            "text": "Building B"
+                          },
+                          {
+                            "text": "Building C"
+                          },
+                          {
+                            "text": "Building D"
+                          },
+                          {
+                            "text": "Main Building"
+                          },
+                          {
+                            "text": "Warehouse"
+                          },
+                          {
+                            "text": "Car Park"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                "languageCode": "en"
+              }
+            ]
+          },
+          "repromptEventHandlers": [
+            {
+              "event": "sys.no-match-1",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "I didn't recognise that site. Please choose a building, for example 'Building C' or 'Main Building'."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "9c2d60d7-b5eb-5495-b363-0384a25def48"
+            },
+            {
+              "event": "sys.no-match-2",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "Please tap one of the buildings, or say 'talk to a person' if it isn't listed."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "3eacbec9-b9f8-5ed1-b36c-37c51d5f380d"
+            },
+            {
+              "event": "sys.no-match-3",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "I'm having trouble understanding, so I'll pass you to a person to make sure nothing is missed."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "targetFlow": "Human Handoff",
+              "name": "51036a1b-c6ef-594f-ab5f-17260491508b"
+            },
+            {
+              "event": "sys.no-input-default",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "Which building is it in?"
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "3609ff02-93b1-5b21-867b-542f30ff2797"
+            }
+          ]
+        }
+      },
+      {
+        "displayName": "location_detail",
+        "required": true,
+        "entityType": "@sys.any",
+        "fillBehavior": {
+          "initialPromptFulfillment": {
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "Where exactly? A floor, room number or nearby landmark helps the team find it quickly (for example 'Level 2 kitchen')."
+                  ]
+                },
+                "languageCode": "en"
+              }
+            ]
+          },
+          "repromptEventHandlers": [
+            {
+              "event": "sys.no-match-1",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "Please describe where it is, such as a floor or room number."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "f1801c6a-fda7-5358-8e6c-e151f96d5817"
+            },
+            {
+              "event": "sys.no-match-2",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "A short description is fine, for example 'near the north stairwell'."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "b04b2612-c883-51e9-97e9-f43f0c760441"
+            },
+            {
+              "event": "sys.no-input-default",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "Where exactly is it?"
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "3b9851c1-2843-5cb3-80f6-7840b4ab5b4c"
+            }
+          ]
+        },
+        "redact": true
+      },
+      {
+        "displayName": "urgency",
+        "required": true,
+        "entityType": "@urgency_level",
+        "fillBehavior": {
+          "initialPromptFulfillment": {
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "How urgent is it? Say 'urgent' if anyone could get hurt or something is being damaged right now, 'ongoing' if it's still happening, or 'minor' if it's small or one-off."
+                  ]
+                },
+                "languageCode": "en"
+              },
+              {
+                "payload": {
+                  "richContent": [
+                    [
+                      {
+                        "type": "chips",
+                        "options": [
+                          {
+                            "text": "Urgent"
+                          },
+                          {
+                            "text": "Ongoing"
+                          },
+                          {
+                            "text": "Minor"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                "languageCode": "en"
+              }
+            ]
+          },
+          "repromptEventHandlers": [
+            {
+              "event": "sys.no-match-1",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "Sorry, is it urgent, ongoing, or minor?"
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "15529790-d907-5f4d-a311-f21d3932072e"
+            },
+            {
+              "event": "sys.no-match-2",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "Please choose: urgent (risk of harm or damage now), ongoing (still happening) or minor."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "280c75b8-d456-5730-b748-f460a0095803"
+            },
+            {
+              "event": "sys.no-match-3",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "I'm having trouble understanding, so I'll pass you to a person to make sure nothing is missed."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "targetFlow": "Human Handoff",
+              "name": "4a32a7e2-f7c1-5ff8-ace8-246bfed048eb"
+            },
+            {
+              "event": "sys.no-input-default",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "How urgent is it: urgent, ongoing or minor?"
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "241082f7-d0dc-5c82-b4d4-b32927689951"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "entryFulfillment": {
+    "messages": [
+      {
+        "text": {
+          "text": [
+            "Thanks for reporting this. I'll ask a few quick questions; it takes about a minute. If this is about a person's conduct or wellbeing, say 'talk to a person' instead."
+          ]
+        },
+        "languageCode": "en"
+      }
+    ]
+  },
+  "transitionRoutes": [
+    {
+      "condition": "$page.params.status = \"FINAL\" AND $session.params.urgency = \"urgent\"",
+      "triggerFulfillment": {
+        "setParameterActions": [
+          {
+            "parameter": "priority",
+            "value": "P1 - respond within 1 hour"
+          }
+        ]
+      },
+      "targetPage": "Urgent Safety Check",
+      "name": "bb18b48b-e5fb-5715-8f9f-5cfb6a8f7f78"
+    },
+    {
+      "condition": "$page.params.status = \"FINAL\" AND $session.params.incident_type = \"hazardous spill\"",
+      "triggerFulfillment": {
+        "setParameterActions": [
+          {
+            "parameter": "priority",
+            "value": "P1 - respond within 1 hour"
+          }
+        ]
+      },
+      "targetPage": "Urgent Safety Check",
+      "name": "ca4a859e-f640-5c9d-9784-55a4a095e33b"
+    },
+    {
+      "condition": "$page.params.status = \"FINAL\" AND $session.params.urgency = \"ongoing\"",
+      "triggerFulfillment": {
+        "setParameterActions": [
+          {
+            "parameter": "priority",
+            "value": "P2 - same business day"
+          }
+        ]
+      },
+      "targetPage": "Assign Team",
+      "name": "caa3d58e-795b-55f3-baff-c0916e6ca768"
+    },
+    {
+      "condition": "$page.params.status = \"FINAL\"",
+      "triggerFulfillment": {
+        "setParameterActions": [
+          {
+            "parameter": "priority",
+            "value": "P3 - within 3 business days"
+          }
+        ]
+      },
+      "targetPage": "Assign Team",
+      "name": "3c4f8551-8472-5aba-8f78-bc63d8231c0c"
+    }
+  ]
+}

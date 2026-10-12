@@ -1,0 +1,124 @@
+{
+  "trainingPhrases": [
+    {
+      "parts": [
+        {
+          "text": "hi",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "hello",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "hey",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "good morning",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "good afternoon",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "hi there",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "hello GreenDesk",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "start",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "what can you do",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "help",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "I need help",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "can you help me",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    }
+  ]
+}

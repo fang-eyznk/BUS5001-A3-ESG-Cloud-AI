@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "value": "urgent",
+      "synonyms": [
+        "urgent",
+        "emergency",
+        "dangerous",
+        "it's dangerous",
+        "someone could get hurt",
+        "safety risk",
+        "safety hazard",
+        "spreading",
+        "it's flooding",
+        "smoke",
+        "fire",
+        "very serious",
+        "right now"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "ongoing",
+      "synonyms": [
+        "ongoing",
+        "still happening",
+        "still running",
+        "still going",
+        "all morning",
+        "all day",
+        "for hours",
+        "continuing",
+        "since yesterday",
+        "for two days",
+        "for days",
+        "again"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "minor",
+      "synonyms": [
+        "minor",
+        "small",
+        "not urgent",
+        "one-off",
+        "one off",
+        "low priority",
+        "no rush",
+        "not serious",
+        "just letting you know"
+      ],
+      "languageCode": "en"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "abee444e-8301-50bd-a805-ac5497b76d01",
+  "displayName": "Follow-up Preference",
+  "form": {},
+  "entryFulfillment": {
+    "messages": [
+      {
+        "text": {
+          "text": [
+            "Would you like updates on this report by email? Your email is used only to update you about this report. Say 'no' to submit it anonymously."
+          ]
+        },
+        "languageCode": "en"
+      },
+      {
+        "payload": {
+          "richContent": [
+            [
+              {
+                "type": "chips",
+                "options": [
+                  {
+                    "text": "Yes, email me"
+                  },
+                  {
+                    "text": "No, stay anonymous"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "languageCode": "en"
+      }
+    ]
+  },
+  "transitionRoutes": [
+    {
+      "intent": "confirmation.yes",
+      "triggerFulfillment": {},
+      "targetPage": "Collect Email",
+      "name": "843a5aa8-f5b9-516d-b63a-cf2b753c5704"
+    },
+    {
+      "intent": "confirmation.no",
+      "triggerFulfillment": {
+        "setParameterActions": [
+          {
+            "parameter": "contact_preference",
+            "value": "anonymous (no follow-up)"
+          }
+        ]
+      },
+      "targetPage": "Report Submitted",
+      "name": "572f5f75-76a1-5418-bf78-5b08ab948839"
+    }
+  ],
+  "eventHandlers": [
+    {
+      "event": "sys.no-match-default",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Please say 'yes' for email updates or 'no' to stay anonymous."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ]
+      },
+      "name": "f3e94d69-eeb8-5afa-be02-64dc6459cc9b"
+    }
+  ]
+}

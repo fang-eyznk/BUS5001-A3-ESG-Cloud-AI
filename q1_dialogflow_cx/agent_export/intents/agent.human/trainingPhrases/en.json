@@ -1,0 +1,144 @@
+{
+  "trainingPhrases": [
+    {
+      "parts": [
+        {
+          "text": "Talk to a person",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "talk to a human",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "I want to speak to someone",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "can I speak to a real person",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "connect me to the facilities team",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "human please",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "operator",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "I need a staff member",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "get me a person",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "this is confidential",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "I want to make a confidential report",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "this is about someone's behaviour",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "I'd rather talk to someone",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "agent please",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "c61ed96d-1e6f-54ae-9b41-e7dbbea649dc",
+  "displayName": "Urgent Safety Check",
+  "form": {},
+  "entryFulfillment": {
+    "messages": [
+      {
+        "text": {
+          "text": [
+            "This sounds urgent. If anyone is injured or in immediate danger, call 000 now, then Site Security on extension 5555. Please keep a safe distance and don't try to clean up chemicals yourself. I'm flagging this as Priority 1 so the on-call team is alerted straight away."
+          ]
+        },
+        "languageCode": "en"
+      }
+    ]
+  },
+  "transitionRoutes": [
+    {
+      "condition": "true",
+      "triggerFulfillment": {},
+      "targetPage": "Assign Team",
+      "name": "e05fe2b3-9af9-527a-8ea1-e2c5d709b63d"
+    }
+  ]
+}

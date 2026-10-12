@@ -1,0 +1,144 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "Entry point: welcome, AI disclosure and routing to the Incident Reporting, Waste Guidance or Human Handoff flows.",
+  "transitionRoutes": [
+    {
+      "intent": "Default Welcome Intent",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Hi, I'm GreenDesk, Corvale's sustainability support assistant. I can help you:\n1. Report a sustainability issue (water leak, energy waste, recycling contamination, hazardous spill or accessibility barrier)\n2. Find the right bin for an item\n3. Connect you with a person\nI'm an automated assistant. Please don't share health details or other people's names here. What would you like to do?"
+              ]
+            },
+            "languageCode": "en"
+          },
+          {
+            "payload": {
+              "richContent": [
+                [
+                  {
+                    "type": "chips",
+                    "options": [
+                      {
+                        "text": "Report an issue"
+                      },
+                      {
+                        "text": "Recycling help"
+                      },
+                      {
+                        "text": "Talk to a person"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            },
+            "languageCode": "en"
+          }
+        ]
+      },
+      "name": "1e361f56-244b-5391-af3b-2e3c6265611a"
+    },
+    {
+      "intent": "incident.report",
+      "triggerFulfillment": {},
+      "targetFlow": "Incident Reporting",
+      "name": "5cc8a5d3-1c39-5b10-ab52-81533492dbf0"
+    },
+    {
+      "intent": "waste.guidance",
+      "triggerFulfillment": {},
+      "targetFlow": "Waste Guidance",
+      "name": "3191fb44-b45b-54be-9c8b-ead820bfe945"
+    },
+    {
+      "intent": "agent.human",
+      "triggerFulfillment": {},
+      "targetFlow": "Human Handoff",
+      "name": "5e3fca1a-06a7-5d2a-a65a-6ae1fe4ab380"
+    },
+    {
+      "intent": "conversation.end",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Thanks for helping make Corvale a more sustainable workplace. Goodbye!"
+              ]
+            },
+            "languageCode": "en"
+          }
+        ]
+      },
+      "targetPage": "End Session",
+      "name": "ebce1d71-a84f-5fde-aaa5-a86ae6b63516"
+    }
+  ],
+  "eventHandlers": [
+    {
+      "event": "sys.no-match-default",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Sorry, I didn't catch that. I can help you report a sustainability issue, answer a recycling question, or connect you to a person. Which would you like?",
+                "I'm not sure I understood. You can say things like 'report a water leak', 'which bin for batteries?' or 'talk to a person'."
+              ]
+            },
+            "languageCode": "en"
+          },
+          {
+            "payload": {
+              "richContent": [
+                [
+                  {
+                    "type": "chips",
+                    "options": [
+                      {
+                        "text": "Report an issue"
+                      },
+                      {
+                        "text": "Recycling help"
+                      },
+                      {
+                        "text": "Talk to a person"
+                      }
+                    ]
+                  }
+                ]
+              ]
+            },
+            "languageCode": "en"
+          }
+        ]
+      },
+      "name": "4447331d-b1e2-524c-adf4-4f2dfc87e0e1"
+    },
+    {
+      "event": "sys.no-input-default",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Take your time. When you're ready, tell me what you'd like to do, or say 'talk to a person'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ]
+      },
+      "name": "5b698b8d-6a45-5835-8f6b-1887759a7b11"
+    }
+  ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC"
+  }
+}

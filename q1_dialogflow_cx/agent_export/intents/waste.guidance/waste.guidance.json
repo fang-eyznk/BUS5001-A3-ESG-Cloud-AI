@@ -1,0 +1,11 @@
+{
+  "name": "da705cb5-b0bd-5b10-9e3b-1754e92cc87d",
+  "displayName": "waste.guidance",
+  "parameters": [
+    {
+      "id": "waste_item",
+      "entityType": "@waste_item"
+    }
+  ],
+  "priority": 500000
+}

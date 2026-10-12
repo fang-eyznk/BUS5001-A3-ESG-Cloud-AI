@@ -1,0 +1,184 @@
+{
+  "trainingPhrases": [
+    {
+      "parts": [
+        {
+          "text": "yes",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "yeah",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "yep",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "yes please",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "correct",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "that's right",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "that's correct",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "sure",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "go ahead",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "submit it",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "please submit",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "sounds good",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "ok",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "okay",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "absolutely",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "Yes, submit",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "Yes, email me",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "email me",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    }
+  ]
+}

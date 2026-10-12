@@ -1,0 +1,336 @@
+{
+  "trainingPhrases": [
+    {
+      "parts": [
+        {
+          "text": "Recycling help",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "recycling help please",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "what goes in the recycling",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "which bin do I use",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "how do I recycle properly",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "I have a question about recycling",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "Which bin does a ",
+          "auto": true
+        },
+        {
+          "text": "coffee cup",
+          "parameterId": "waste_item",
+          "auto": true
+        },
+        {
+          "text": " go in?",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "can ",
+          "auto": true
+        },
+        {
+          "text": "coffee cups",
+          "parameterId": "waste_item",
+          "auto": true
+        },
+        {
+          "text": " be recycled",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "How do I recycle ",
+          "auto": true
+        },
+        {
+          "text": "batteries",
+          "parameterId": "waste_item",
+          "auto": true
+        },
+        {
+          "text": "?",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "where do I put old ",
+          "auto": true
+        },
+        {
+          "text": "batteries",
+          "parameterId": "waste_item",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "Where can I throw away an old ",
+          "auto": true
+        },
+        {
+          "text": "laptop",
+          "parameterId": "waste_item",
+          "auto": true
+        },
+        {
+          "text": "?",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "how do I get rid of ",
+          "auto": true
+        },
+        {
+          "text": "e-waste",
+          "parameterId": "waste_item",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "can ",
+          "auto": true
+        },
+        {
+          "text": "soft plastics",
+          "parameterId": "waste_item",
+          "auto": true
+        },
+        {
+          "text": " go in the recycling",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "what do I do with a ",
+          "auto": true
+        },
+        {
+          "text": "plastic bag",
+          "parameterId": "waste_item",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "where do ",
+          "auto": true
+        },
+        {
+          "text": "food scraps",
+          "parameterId": "waste_item",
+          "auto": true
+        },
+        {
+          "text": " go",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "which bin for ",
+          "auto": true
+        },
+        {
+          "text": "coffee grounds",
+          "parameterId": "waste_item",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "can I recycle ",
+          "auto": true
+        },
+        {
+          "text": "cardboard",
+          "parameterId": "waste_item",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "where does ",
+          "auto": true
+        },
+        {
+          "text": "office paper",
+          "parameterId": "waste_item",
+          "auto": true
+        },
+        {
+          "text": " go",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "where do I put a ",
+          "auto": true
+        },
+        {
+          "text": "glass bottle",
+          "parameterId": "waste_item",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "how to dispose of ",
+          "auto": true
+        },
+        {
+          "text": "toner",
+          "parameterId": "waste_item",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "can ",
+          "auto": true
+        },
+        {
+          "text": "plastic bottles",
+          "parameterId": "waste_item",
+          "auto": true
+        },
+        {
+          "text": " be recycled",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    },
+    {
+      "parts": [
+        {
+          "text": "which bin for a ",
+          "auto": true
+        },
+        {
+          "text": "takeaway container",
+          "parameterId": "waste_item",
+          "auto": true
+        }
+      ],
+      "repeatCount": 1,
+      "languageCode": "en"
+    }
+  ]
+}

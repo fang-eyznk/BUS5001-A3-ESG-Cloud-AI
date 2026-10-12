@@ -1,0 +1,355 @@
+{
+  "name": "7dd3e87c-265d-5ffc-b54f-291a5889a4a6",
+  "displayName": "Identify Item",
+  "form": {
+    "parameters": [
+      {
+        "displayName": "waste_item",
+        "required": true,
+        "entityType": "@waste_item",
+        "fillBehavior": {
+          "initialPromptFulfillment": {
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "Which item do you want to dispose of? For example: coffee cup, batteries, soft plastics, e-waste or food scraps."
+                  ]
+                },
+                "languageCode": "en"
+              },
+              {
+                "payload": {
+                  "richContent": [
+                    [
+                      {
+                        "type": "chips",
+                        "options": [
+                          {
+                            "text": "Coffee cup"
+                          },
+                          {
+                            "text": "Batteries"
+                          },
+                          {
+                            "text": "Soft plastics"
+                          },
+                          {
+                            "text": "E-waste"
+                          },
+                          {
+                            "text": "Food scraps"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                "languageCode": "en"
+              }
+            ]
+          },
+          "repromptEventHandlers": [
+            {
+              "event": "sys.no-match-1",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "Sorry, I don't recognise that item. Try a general name like 'battery', 'laptop' or 'plastic bag'."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "7d1a30e1-bd8d-5c8d-b94e-6b2f62e68b81"
+            },
+            {
+              "event": "sys.no-match-2",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "I still couldn't match that item. Try one of the buttons, or say 'talk to a person'."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "4b65fb87-95e5-5bc8-ae59-33f8723dfe6f"
+            },
+            {
+              "event": "sys.no-match-3",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "I'm having trouble understanding, so I'll pass you to a person to make sure nothing is missed."
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "targetFlow": "Human Handoff",
+              "name": "eb7580be-724d-5180-a59b-97a09091a0c0"
+            },
+            {
+              "event": "sys.no-input-default",
+              "triggerFulfillment": {
+                "messages": [
+                  {
+                    "text": {
+                      "text": [
+                        "Which item are you trying to throw away?"
+                      ]
+                    },
+                    "languageCode": "en"
+                  }
+                ]
+              },
+              "name": "7c449dbd-b18a-52c2-b016-d5fc8920add5"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "transitionRoutes": [
+    {
+      "condition": "$page.params.status = \"FINAL\" AND $session.params.waste_item = \"coffee cup\"",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Most takeaway coffee cups are lined with plastic, so they can't go in recycling. Put the cup in general waste and the plastic lid in the yellow-lid recycling bin. Even better, bring a reusable cup: our cafes give a discount.\nAnything else? Ask about another item, report an issue, or say 'bye'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ],
+        "setParameterActions": [
+          {
+            "parameter": "waste_item",
+            "value": null
+          }
+        ]
+      },
+      "targetPage": "End Flow",
+      "name": "a1251fec-875c-5cf5-8936-afd425340299"
+    },
+    {
+      "condition": "$page.params.status = \"FINAL\" AND $session.params.waste_item = \"soft plastics\"",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Soft plastics (bags, wrappers, cling wrap) jam recycling machinery, so never put them in the yellow-lid recycling bin. Use the soft-plastics collection bag in the Level 1 kitchens, or general waste if there isn't one.\nAnything else? Ask about another item, report an issue, or say 'bye'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ],
+        "setParameterActions": [
+          {
+            "parameter": "waste_item",
+            "value": null
+          }
+        ]
+      },
+      "targetPage": "End Flow",
+      "name": "aacb201c-c578-5471-92cb-aede8d186e44"
+    },
+    {
+      "condition": "$page.params.status = \"FINAL\" AND $session.params.waste_item = \"batteries\"",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Please never put batteries in any bin: they can start fires in bins, trucks and recycling facilities. Tape the ends and drop them in the battery collection tube at reception (a B-cycle accredited drop-off).\nAnything else? Ask about another item, report an issue, or say 'bye'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ],
+        "setParameterActions": [
+          {
+            "parameter": "waste_item",
+            "value": null
+          }
+        ]
+      },
+      "targetPage": "End Flow",
+      "name": "9b8b718b-81ed-5792-9d04-c03cfb681153"
+    },
+    {
+      "condition": "$page.params.status = \"FINAL\" AND $session.params.waste_item = \"e-waste\"",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "E-waste is banned from landfill in Victoria. Work devices must go back to IT Asset Services (log a request on the IT portal) so data is securely wiped. Small personal e-waste can go in the e-waste cage at the loading dock.\nAnything else? Ask about another item, report an issue, or say 'bye'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ],
+        "setParameterActions": [
+          {
+            "parameter": "waste_item",
+            "value": null
+          }
+        ]
+      },
+      "targetPage": "End Flow",
+      "name": "83f1b0e3-9e25-59ca-b010-31170aafe94f"
+    },
+    {
+      "condition": "$page.params.status = \"FINAL\" AND $session.params.waste_item = \"food scraps\"",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Food scraps, coffee grounds and tea bags go in the green-lid organics caddy in the kitchens. No plastic bags or packaging please.\nAnything else? Ask about another item, report an issue, or say 'bye'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ],
+        "setParameterActions": [
+          {
+            "parameter": "waste_item",
+            "value": null
+          }
+        ]
+      },
+      "targetPage": "End Flow",
+      "name": "2fdcfa75-1f00-5b43-9a77-592f4512d4cc"
+    },
+    {
+      "condition": "$page.params.status = \"FINAL\" AND $session.params.waste_item = \"paper and cardboard\"",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Clean paper and flattened cardboard go in the paper recycling bin. Confidential documents go in the locked secure-shredding console instead.\nAnything else? Ask about another item, report an issue, or say 'bye'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ],
+        "setParameterActions": [
+          {
+            "parameter": "waste_item",
+            "value": null
+          }
+        ]
+      },
+      "targetPage": "End Flow",
+      "name": "04cea618-6a91-5231-bca3-640582434c52"
+    },
+    {
+      "condition": "$page.params.status = \"FINAL\" AND $session.params.waste_item = \"glass\"",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Empty glass bottles and jars go in the purple-lid glass bin in the kitchens. Drinking glasses, ceramics and window glass go in general waste.\nAnything else? Ask about another item, report an issue, or say 'bye'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ],
+        "setParameterActions": [
+          {
+            "parameter": "waste_item",
+            "value": null
+          }
+        ]
+      },
+      "targetPage": "End Flow",
+      "name": "39e3c06c-cf11-57b4-bbbb-e359693654b1"
+    },
+    {
+      "condition": "$page.params.status = \"FINAL\" AND $session.params.waste_item = \"printer cartridges\"",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Return ink and toner cartridges to the 'Cartridges 4 Planet Ark' box next to each print room.\nAnything else? Ask about another item, report an issue, or say 'bye'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ],
+        "setParameterActions": [
+          {
+            "parameter": "waste_item",
+            "value": null
+          }
+        ]
+      },
+      "targetPage": "End Flow",
+      "name": "ff573bf1-f6a2-5fd6-a079-7bb8d626d428"
+    },
+    {
+      "condition": "$page.params.status = \"FINAL\" AND $session.params.waste_item = \"plastic bottles and containers\"",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "Empty and rinse plastic bottles and containers and put them in the yellow-lid recycling bin. Eligible drink containers can also go in the CDS Vic container-return box for a 10c refund donated to our community partner.\nAnything else? Ask about another item, report an issue, or say 'bye'."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ],
+        "setParameterActions": [
+          {
+            "parameter": "waste_item",
+            "value": null
+          }
+        ]
+      },
+      "targetPage": "End Flow",
+      "name": "cf6d132d-02aa-5c88-8094-22c274d3f23b"
+    },
+    {
+      "condition": "$page.params.status = \"FINAL\"",
+      "triggerFulfillment": {
+        "messages": [
+          {
+            "text": {
+              "text": [
+                "I don't have guidance for that item yet. Please check the signs above the bins or ask the ESG Operations Desk."
+              ]
+            },
+            "languageCode": "en"
+          }
+        ],
+        "setParameterActions": [
+          {
+            "parameter": "waste_item",
+            "value": null
+          }
+        ]
+      },
+      "targetPage": "End Flow",
+      "name": "32a0e408-9dda-5702-8bfe-230103eebfb1"
+    }
+  ]
+}

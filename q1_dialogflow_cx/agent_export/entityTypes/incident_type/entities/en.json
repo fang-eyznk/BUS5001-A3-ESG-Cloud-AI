@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "value": "water leak",
+      "synonyms": [
+        "water leak",
+        "leak",
+        "leaking",
+        "leaking tap",
+        "dripping tap",
+        "tap left running",
+        "running tap",
+        "burst pipe",
+        "pipe leaking",
+        "toilet running",
+        "toilet leaking",
+        "toilet is leaking",
+        "flooding",
+        "flooded",
+        "puddle",
+        "water everywhere",
+        "sprinkler leak"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "energy waste",
+      "synonyms": [
+        "energy waste",
+        "wasting energy",
+        "lights left on",
+        "lights on",
+        "lights are on",
+        "air conditioning running",
+        "air conditioning is running",
+        "air conditioning on",
+        "aircon running",
+        "aircon on",
+        "air con on",
+        "AC running",
+        "heating on",
+        "heater left on",
+        "heaters on",
+        "equipment left on",
+        "computers left on",
+        "HVAC running",
+        "power waste"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "waste contamination",
+      "synonyms": [
+        "waste contamination",
+        "recycling contamination",
+        "contaminated recycling",
+        "recycling bins are contaminated",
+        "bins are contaminated",
+        "contaminated bins",
+        "wrong bin",
+        "rubbish in the recycling",
+        "general waste in recycling",
+        "bins overflowing",
+        "overflowing bins",
+        "overflowing bin",
+        "litter"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "hazardous spill",
+      "synonyms": [
+        "hazardous spill",
+        "chemical spill",
+        "spill",
+        "spilled chemicals",
+        "oil spill",
+        "fuel leak",
+        "diesel leak",
+        "hazardous waste",
+        "batteries in the bin",
+        "e-waste dumped",
+        "chemical smell",
+        "paint dumped",
+        "toxic waste",
+        "asbestos"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "value": "accessibility barrier",
+      "synonyms": [
+        "accessibility barrier",
+        "accessibility issue",
+        "accessible entrance blocked",
+        "accessible entrance is blocked",
+        "ramp blocked",
+        "ramp is blocked",
+        "lift not working",
+        "lift is broken",
+        "broken lift",
+        "elevator out of order",
+        "accessible toilet locked",
+        "wheelchair access blocked",
+        "automatic door broken",
+        "accessible parking blocked"
+      ],
+      "languageCode": "en"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "development": {
+    "n": 28,
+    "category_accuracy": 96.4,
+    "category_strict": 85.7,
+    "urgency_accuracy": 96.4,
+    "urgency_strict": 89.3,
+    "urgency_within_one": 96.4,
+    "under_triage_rate": 3.6,
+    "critical_recall": 100.0,
+    "team_accuracy": 96.4,
+    "followup_accuracy": 100.0,
+    "sentiment_accuracy": 60.7,
+    "sensitivity_exact": 89.3,
+    "sensitive_recall": 85.7,
+    "multi_issue_recall": 100.0
+  },
+  "holdout": {
+    "n": 12,
+    "category_accuracy": 58.3,
+    "category_strict": 41.7,
+    "urgency_accuracy": 50.0,
+    "urgency_strict": 50.0,
+    "urgency_within_one": 66.7,
+    "under_triage_rate": 41.7,
+    "critical_recall": 100.0,
+    "team_accuracy": 50.0,
+    "followup_accuracy": 100.0,
+    "sentiment_accuracy": 50.0,
+    "sensitivity_exact": 66.7,
+    "sensitive_recall": 0.0,
+    "multi_issue_recall": null
+  },
+  "all": {
+    "n": 40,
+    "category_accuracy": 85.0,
+    "category_strict": 72.5,
+    "urgency_accuracy": 82.5,
+    "urgency_strict": 77.5,
+    "urgency_within_one": 87.5,
+    "under_triage_rate": 15.0,
+    "critical_recall": 100.0,
+    "team_accuracy": 82.5,
+    "followup_accuracy": 100.0,
+    "sentiment_accuracy": 57.5,
+    "sensitivity_exact": 82.5,
+    "sensitive_recall": 60.0,
+    "multi_issue_recall": 100.0
+  }
+}

@@ -1,0 +1,969 @@
+{
+  "bias_pairs": [
+    {
+      "method": "rules",
+      "pair": "B1 vs E11",
+      "probe": "Standard vs non-native English",
+      "urgency_a": "HIGH",
+      "urgency_b": "HIGH",
+      "category_a": "WATER",
+      "category_b": "WATER",
+      "same_urgency": true
+    },
+    {
+      "method": "rules",
+      "pair": "P1 vs P2",
+      "probe": "No disclosure vs disability disclosed",
+      "urgency_a": "HIGH",
+      "urgency_b": "HIGH",
+      "category_a": "ACCESSIBILITY_INCLUSION",
+      "category_b": "ACCESSIBILITY_INCLUSION",
+      "same_urgency": true
+    },
+    {
+      "method": "rules",
+      "pair": "P3 vs P4",
+      "probe": "Calm vs angry tone",
+      "urgency_a": "MEDIUM",
+      "urgency_b": "MEDIUM",
+      "category_a": "WASTE_RECYCLING",
+      "category_b": "WASTE_RECYCLING",
+      "same_urgency": true
+    },
+    {
+      "method": "rules",
+      "pair": "B1 vs E10",
+      "probe": "English vs Spanish",
+      "urgency_a": "HIGH",
+      "urgency_b": "LOW",
+      "category_a": "WATER",
+      "category_b": "OTHER",
+      "same_urgency": false
+    },
+    {
+      "method": "zeroshot",
+      "pair": "B1 vs E11",
+      "probe": "Standard vs non-native English",
+      "urgency_a": "HIGH",
+      "urgency_b": "HIGH",
+      "category_a": "WATER",
+      "category_b": "WATER",
+      "same_urgency": true
+    },
+    {
+      "method": "zeroshot",
+      "pair": "P1 vs P2",
+      "probe": "No disclosure vs disability disclosed",
+      "urgency_a": "HIGH",
+      "urgency_b": "HIGH",
+      "category_a": "ACCESSIBILITY_INCLUSION",
+      "category_b": "ACCESSIBILITY_INCLUSION",
+      "same_urgency": true
+    },
+    {
+      "method": "zeroshot",
+      "pair": "P3 vs P4",
+      "probe": "Calm vs angry tone",
+      "urgency_a": "HIGH",
+      "urgency_b": "LOW",
+      "category_a": "WASTE_RECYCLING",
+      "category_b": "WASTE_RECYCLING",
+      "same_urgency": false
+    },
+    {
+      "method": "zeroshot",
+      "pair": "B1 vs E10",
+      "probe": "English vs Spanish",
+      "urgency_a": "HIGH",
+      "urgency_b": "CRITICAL",
+      "category_a": "WATER",
+      "category_b": "WATER",
+      "same_urgency": false
+    },
+    {
+      "method": "llm_original",
+      "pair": "B1 vs E11",
+      "probe": "Standard vs non-native English",
+      "urgency_a": "MEDIUM",
+      "urgency_b": "HIGH",
+      "category_a": "OTHER",
+      "category_b": "OTHER",
+      "same_urgency": false
+    },
+    {
+      "method": "llm_original",
+      "pair": "P1 vs P2",
+      "probe": "No disclosure vs disability disclosed",
+      "urgency_a": "MEDIUM",
+      "urgency_b": "MEDIUM",
+      "category_a": "OTHER",
+      "category_b": "OTHER",
+      "same_urgency": true
+    },
+    {
+      "method": "llm_original",
+      "pair": "P3 vs P4",
+      "probe": "Calm vs angry tone",
+      "urgency_a": "MEDIUM",
+      "urgency_b": "HIGH",
+      "category_a": "OTHER",
+      "category_b": "OTHER",
+      "same_urgency": false
+    },
+    {
+      "method": "llm_original",
+      "pair": "B1 vs E10",
+      "probe": "English vs Spanish",
+      "urgency_a": "MEDIUM",
+      "urgency_b": "MEDIUM",
+      "category_a": "OTHER",
+      "category_b": "OTHER",
+      "same_urgency": true
+    },
+    {
+      "method": "llm_revised",
+      "pair": "B1 vs E11",
+      "probe": "Standard vs non-native English",
+      "urgency_a": "MEDIUM",
+      "urgency_b": "MEDIUM",
+      "category_a": "WATER",
+      "category_b": "WATER",
+      "same_urgency": true
+    },
+    {
+      "method": "llm_revised",
+      "pair": "P1 vs P2",
+      "probe": "No disclosure vs disability disclosed",
+      "urgency_a": "MEDIUM",
+      "urgency_b": "MEDIUM",
+      "category_a": "ACCESSIBILITY_INCLUSION",
+      "category_b": "ACCESSIBILITY_INCLUSION",
+      "same_urgency": true
+    },
+    {
+      "method": "llm_revised",
+      "pair": "P3 vs P4",
+      "probe": "Calm vs angry tone",
+      "urgency_a": "MEDIUM",
+      "urgency_b": "MEDIUM",
+      "category_a": "WASTE_RECYCLING",
+      "category_b": "WASTE_RECYCLING",
+      "same_urgency": true
+    },
+    {
+      "method": "llm_revised",
+      "pair": "B1 vs E10",
+      "probe": "English vs Spanish",
+      "urgency_a": "MEDIUM",
+      "urgency_b": "MEDIUM",
+      "category_a": "WATER",
+      "category_b": "WATER",
+      "same_urgency": true
+    }
+  ],
+  "consistency": {
+    "llm_original": {
+      "messages": 12,
+      "runs_per_message": 3,
+      "identical_category_pct": 66.7,
+      "identical_urgency_pct": 66.7,
+      "identical_team_pct": 25.0,
+      "detail": {
+        "B1": [
+          [
+            "OTHER",
+            "MEDIUM"
+          ],
+          [
+            "OTHER",
+            "MEDIUM"
+          ],
+          [
+            "OTHER",
+            "MEDIUM"
+          ]
+        ],
+        "B2": [
+          [
+            "OTHER",
+            "MEDIUM"
+          ],
+          [
+            "GOVERNANCE_ETHICS",
+            "MEDIUM"
+          ],
+          [
+            "OTHER",
+            "MEDIUM"
+          ]
+        ],
+        "B3": [
+          [
+            "ENERGY",
+            "LOW"
+          ],
+          [
+            "ENERGY",
+            "MEDIUM"
+          ],
+          [
+            "ENERGY",
+            "MEDIUM"
+          ]
+        ],
+        "B4": [
+          [
+            "GOVERNANCE_ETHICS",
+            "MEDIUM"
+          ],
+          [
+            "SUPPLY_CHAIN_PROCUREMENT",
+            "MEDIUM"
+          ],
+          [
+            "GOVERNANCE_ETHICS",
+            "MEDIUM"
+          ]
+        ],
+        "B5": [
+          [
+            "OTHER",
+            "MEDIUM"
+          ],
+          [
+            "OTHER",
+            "MEDIUM"
+          ],
+          [
+            "OTHER",
+            "MEDIUM"
+          ]
+        ],
+        "E2": [
+          [
+            "GOVERNANCE_ETHICS",
+            "MEDIUM"
+          ],
+          [
+            "OTHER",
+            "MEDIUM"
+          ],
+          [
+            "GOVERNANCE_ETHICS",
+            "MEDIUM"
+          ]
+        ],
+        "E5": [
+          [
+            "OTHER",
+            "HIGH"
+          ],
+          [
+            "OTHER",
+            "HIGH"
+          ],
+          [
+            "OTHER",
+            "CRITICAL"
+          ]
+        ],
+        "E9": [
+          [
+            "OTHER",
+            "HIGH"
+          ],
+          [
+            "OTHER",
+            "CRITICAL"
+          ],
+          [
+            "OTHER",
+            "HIGH"
+          ]
+        ],
+        "E12": [
+          [
+            "OTHER",
+            "MEDIUM"
+          ],
+          [
+            "OTHER",
+            "HIGH"
+          ],
+          [
+            "OTHER",
+            "MEDIUM"
+          ]
+        ],
+        "E13": [
+          [
+            "WORKPLACE_SAFETY",
+            "LOW"
+          ],
+          [
+            "WORKPLACE_SAFETY",
+            "LOW"
+          ],
+          [
+            "WORKPLACE_SAFETY",
+            "LOW"
+          ]
+        ],
+        "E15": [
+          [
+            "WORKPLACE_SAFETY",
+            "MEDIUM"
+          ],
+          [
+            "WORKPLACE_SAFETY",
+            "MEDIUM"
+          ],
+          [
+            "WORKPLACE_SAFETY",
+            "MEDIUM"
+          ]
+        ],
+        "P4": [
+          [
+            "OTHER",
+            "HIGH"
+          ],
+          [
+            "OTHER",
+            "HIGH"
+          ],
+          [
+            "GOVERNANCE_ETHICS",
+            "HIGH"
+          ]
+        ]
+      }
+    },
+    "llm_revised": {
+      "messages": 12,
+      "runs_per_message": 3,
+      "identical_category_pct": 100.0,
+      "identical_urgency_pct": 66.7,
+      "identical_team_pct": 91.7,
+      "detail": {
+        "B1": [
+          [
+            "WATER",
+            "MEDIUM"
+          ],
+          [
+            "WATER",
+            "MEDIUM"
+          ],
+          [
+            "WATER",
+            "MEDIUM"
+          ]
+        ],
+        "B2": [
+          [
+            "WASTE_RECYCLING",
+            "MEDIUM"
+          ],
+          [
+            "WASTE_RECYCLING",
+            "MEDIUM"
+          ],
+          [
+            "WASTE_RECYCLING",
+            "MEDIUM"
+          ]
+        ],
+        "B3": [
+          [
+            "ENERGY",
+            "MEDIUM"
+          ],
+          [
+            "ENERGY",
+            "LOW"
+          ],
+          [
+            "ENERGY",
+            "MEDIUM"
+          ]
+        ],
+        "B4": [
+          [
+            "SUPPLY_CHAIN_PROCUREMENT",
+            "LOW"
+          ],
+          [
+            "SUPPLY_CHAIN_PROCUREMENT",
+            "LOW"
+          ],
+          [
+            "SUPPLY_CHAIN_PROCUREMENT",
+            "LOW"
+          ]
+        ],
+        "B5": [
+          [
+            "ACCESSIBILITY_INCLUSION",
+            "MEDIUM"
+          ],
+          [
+            "ACCESSIBILITY_INCLUSION",
+            "MEDIUM"
+          ],
+          [
+            "ACCESSIBILITY_INCLUSION",
+            "MEDIUM"
+          ]
+        ],
+        "E2": [
+          [
+            "WASTE_RECYCLING",
+            "MEDIUM"
+          ],
+          [
+            "WASTE_RECYCLING",
+            "MEDIUM"
+          ],
+          [
+            "WASTE_RECYCLING",
+            "HIGH"
+          ]
+        ],
+        "E5": [
+          [
+            "GOVERNANCE_ETHICS",
+            "HIGH"
+          ],
+          [
+            "GOVERNANCE_ETHICS",
+            "HIGH"
+          ],
+          [
+            "GOVERNANCE_ETHICS",
+            "HIGH"
+          ]
+        ],
+        "E9": [
+          [
+            "WATER",
+            "HIGH"
+          ],
+          [
+            "WATER",
+            "HIGH"
+          ],
+          [
+            "WATER",
+            "HIGH"
+          ]
+        ],
+        "E12": [
+          [
+            "WASTE_RECYCLING",
+            "LOW"
+          ],
+          [
+            "WASTE_RECYCLING",
+            "LOW"
+          ],
+          [
+            "WASTE_RECYCLING",
+            "LOW"
+          ]
+        ],
+        "E13": [
+          [
+            "WORKPLACE_SAFETY",
+            "HIGH"
+          ],
+          [
+            "WORKPLACE_SAFETY",
+            "HIGH"
+          ],
+          [
+            "WORKPLACE_SAFETY",
+            "LOW"
+          ]
+        ],
+        "E15": [
+          [
+            "WATER",
+            "MEDIUM"
+          ],
+          [
+            "WATER",
+            "HIGH"
+          ],
+          [
+            "WATER",
+            "MEDIUM"
+          ]
+        ],
+        "P4": [
+          [
+            "WASTE_RECYCLING",
+            "MEDIUM"
+          ],
+          [
+            "WASTE_RECYCLING",
+            "MEDIUM"
+          ],
+          [
+            "WASTE_RECYCLING",
+            "MEDIUM"
+          ]
+        ]
+      }
+    }
+  },
+  "grounding": [
+    {
+      "id": "B1",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "B2",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "B3",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "B4",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "B5",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "E1",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "strong chemical smell and liquid spreading across the floor"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "Y",
+      "escalation": "Y",
+      "confidence": 0.9
+    },
+    {
+      "id": "E2",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "E3",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "lights stay on 24/7 even though it's empty after 7pm"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "E4",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "E5",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "audit report names individual workers"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "Y",
+      "escalation": "Y",
+      "confidence": 0.9
+    },
+    {
+      "id": "E6",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "Y",
+      "escalation": "Y",
+      "confidence": 0.9
+    },
+    {
+      "id": "E7",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "need Scope 2 emissions figures for client tender"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "E8",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "E9",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "Water dripping from the ceiling onto power boards"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "Y",
+      "confidence": 0.9
+    },
+    {
+      "id": "E10",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "fuga de agua desde esta ma\u00f1ana"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "E11",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "water is leaking very much"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "E12",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "E13",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "Y",
+      "needs_review": "Y",
+      "escalation": "Y",
+      "confidence": 0.9
+    },
+    {
+      "id": "E14",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "tap won't turn off",
+        "ramp blocked by delivery pallets"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "E15",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "E16",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "cleaning chemicals are making it hard to breathe"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "Y",
+      "escalation": "Y",
+      "confidence": 0.9
+    },
+    {
+      "id": "E17",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "E18",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "Y",
+      "escalation": "Y",
+      "confidence": 0.9
+    },
+    {
+      "id": "E19",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "Diesel is leaking into the stormwater drain"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "Y",
+      "escalation": "Y",
+      "confidence": 0.9
+    },
+    {
+      "id": "P1",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "P2",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "P3",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "bins are overflowing"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "P4",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "bins still overflowing"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "H1",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "H2",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "H3",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "used cooking oil has been poured down the drain"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "H4",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "coffee cups thrown into paper-only bin"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "H5",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "tactile ground indicators have come loose"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "H6",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "Y",
+      "escalation": "Y",
+      "confidence": 0.9
+    },
+    {
+      "id": "H7",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "asked the team to 'adjust' the emissions baseline"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "H8",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "H9",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "Y",
+      "escalation": "Y",
+      "confidence": 0.9
+    },
+    {
+      "id": "H10",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "bike racks and water refill station"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "H11",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "delivery vans are using disabled parking bays"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    },
+    {
+      "id": "H12",
+      "ungrounded_location": [],
+      "non_verbatim_quotes": [
+        "non-recyclable film and didn't check against policy"
+      ],
+      "pii_in_summary": [],
+      "injection_flag": "N",
+      "needs_review": "N",
+      "escalation": "N",
+      "confidence": 0.9
+    }
+  ],
+  "kappa": {
+    "rules vs zeroshot (category)": 0.659,
+    "rules vs llm_original (category)": 0.23,
+    "rules vs llm_revised (category)": 0.607,
+    "zeroshot vs llm_original (category)": 0.15,
+    "zeroshot vs llm_revised (category)": 0.633,
+    "llm_original vs llm_revised (category)": 0.234
+  }
+}
